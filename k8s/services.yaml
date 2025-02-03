@@ -6,8 +6,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 80      # Exposed service port
-      targetPort: 3000  # Must match the containerPort in the frontend Deployment
+    - port: 80      
+      targetPort: 3000  
   selector:
     app: frontend
 
@@ -22,6 +22,6 @@ spec:
   ports:
     - protocol: TCP
       port: 5000
-      targetPort: 5000  # Must match containerPort in backend Deployment
+      targetPort: 5000  
   selector:
     app: backend
